@@ -72,14 +72,38 @@ SIMPLE_JWT = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # 로컬 개발용
-    "https://port-0-capstone-server-ma6mecvv8ff7d79c.sel4.cloudtype.app",  # Cloudtype 배포된 백엔드 주소
-    "https://배포된프론트주소.vercel.app",  # ✅ (Vercel 프론트 주소도 여기에 추가!)
+    "https://capstone-app-mu.vercel.app",  # ✅ (Vercel 프론트 주소도 여기에 추가!)
 ]
 
+# ✅ 추가: preflight OPTIONS 허용
+CORS_ALLOW_HEADERS = [
+    "accept",
+    "accept-encoding",
+    "authorization",
+    "content-type",
+    "dnt",
+    "origin",
+    "user-agent",
+    "x-csrftoken",
+    "x-requested-with",
+]
+
+# ✅ 추가: 모든 메서드 허용
+CORS_ALLOW_METHODS = [
+    "DELETE",
+    "GET",
+    "OPTIONS",
+    "PATCH",
+    "POST",
+    "PUT",
+]
+
+CORS_ALLOW_CREDENTIALS = True  # ✅ JWT를 쿠키/Authorization 헤더로 전송할 수 있도록 허용
 
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
