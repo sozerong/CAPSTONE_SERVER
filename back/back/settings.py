@@ -67,8 +67,11 @@ SIMPLE_JWT = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # React 주소
+    "http://localhost:3000",  # 로컬 개발용
+    "https://port-0-capstone-server-ma6mecvv8ff7d79c.sel4.cloudtype.app",  # Cloudtype 배포된 백엔드 주소
+    "https://배포된프론트주소.vercel.app",  # ✅ (Vercel 프론트 주소도 여기에 추가!)
 ]
+
 
 
 MIDDLEWARE = [
