@@ -36,7 +36,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "https://port-0-capstone-server-ma6mecvv8ff7d79c.sel4.cloudtype.app",  # Cloudtype 배포된 백엔드 주소
-    "https://배포된프론트주소.vercel.app"
+    "https://capstone-app-mu.vercel.app"
 ]
 
 
