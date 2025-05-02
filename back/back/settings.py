@@ -34,7 +34,10 @@ SECRET_KEY = "django-insecure-3y@be7rucsddiv9zu^rw1($7@_r@78eu+!o0)k39f1f%nnvc%i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "https://port-0-capstone-server-ma6mecvv8ff7d79c.sel4.cloudtype.app",  # Cloudtype 배포된 백엔드 주소
+    "https://배포된프론트주소.vercel.app"
+]
 
 
 # Application definition
