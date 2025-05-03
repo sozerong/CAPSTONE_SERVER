@@ -35,7 +35,7 @@ SECRET_KEY = "django-insecure-3y@be7rucsddiv9zu^rw1($7@_r@78eu+!o0)k39f1f%nnvc%i
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "port-0-capstone-server-ma6mecvv8ff7d79c.sel4.cloudtype.app",
+    'port-0-capstone-server-ma7qi2cl823545d5.sel4.cloudtype.app',
     "capstone-app-mu.vercel.app",
 ]
 
