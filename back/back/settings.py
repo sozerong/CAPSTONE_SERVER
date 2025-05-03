@@ -74,8 +74,7 @@ SIMPLE_JWT = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # 로컬 개발용
-    "https://capstone-app-mu.vercel.app",  # ✅ (Vercel 프론트 주소도 여기에 추가!)
+    "https://capstone-app-mu.vercel.app",  # 👈 Vercel 배포 주소
 ]
 
 # ✅ 추가: preflight OPTIONS 허용
