@@ -14,6 +14,7 @@ from pathlib import Path
 import os
 import dj_database_url
 from dotenv import load_dotenv
+from datetime import timedelta
 
 load_dotenv()
 DATABASES = {
@@ -67,6 +68,8 @@ REST_FRAMEWORK = {
 }
 
 SIMPLE_JWT = {
+    "ACCESS_TOKEN_LIFETIME": timedelta(hours=3),   # ✅ Access Token 유효기간 1시간
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=7),   # ✅ Refresh Token은 7일 유지
     'BLACKLIST_AFTER_ROTATION': True,
 }
 
