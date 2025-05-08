@@ -38,6 +38,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'port-0-capstone-server-ma7qi2cl823545d5.sel4.cloudtype.app',
     "capstone-app-mu.vercel.app",
+    "vcc-roan.vercel.app"
 ]
 
 
@@ -75,6 +76,7 @@ SIMPLE_JWT = {
 
 CORS_ALLOWED_ORIGINS = [
     "https://capstone-app-mu.vercel.app",  # 👈 Vercel 배포 주소
+    "vcc-roan.vercel.app"
 ]
 
 # ✅ 추가: preflight OPTIONS 허용
